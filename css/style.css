@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #dad7d5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(/img/fondo.png);
+    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el fondo */
+    background-attachment: fixed; /* Establece la imagen de fondo como fija */
+}
+.header{
+    width: 80%;
+    height: 6em; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.nav{
+    width: 80%;
+    height: 3em;
+}
+.barraNav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    width: 20%;
+    height: 100%;
+    background-color: #706c6c;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    transition: background-color 0.2s;
+    color: #dad7d5;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.menu:hover{
+    background-color: #a8a8a4;
+}
+.banner{
+    width: 80%;
+    height: calc(70vh - 1em);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-banner{
+     width: 100%; 
+     height: 90%;
+}
+.main{
+    width: 80%;
+    height: 70em;
+}
+.article, .equipos, .programas{
+    background-color: #fffdfd76;
+    padding: 30px 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: #000000;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 10px #383737;
+}
+.title-article, .title-equipos, .title-programas{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 1000;
+    margin-bottom: 15px;
+    color: #000;
+}
+.article p, .lista-equipos, .lista-programas {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #000;
+}
+.equipos, .programas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.img-equipos, .img-programas{
+    max-width: 100%;
+    height: 20em;
+    border-radius: 45%;
+} 
+.img-equipos, .img-programas {
+    max-width: 100%;
+    height: 20em;
+    border-radius: 45%;
+    transition: transform 0.5s ease; 
+}
+
+.img-equipos:hover, .img-programas:hover {
+    transform: scale(1.1); 
+}
+.inscripcion{
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-inscripcion{
+    width: 120px;
+    height: 40px;
+    padding: 5px 10px; 
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 10px; 
+    box-shadow: 2px 2px 5px #000; 
+    background-color: #ee0000;
+    transition: background-color 0.1s;
+    color: #fff;
+    cursor: pointer;
+}   
+.btn-inscripcion:hover{
+    background-color: #706c6c;
+}
+
+.footer {
+    width: 100%;
+    line-height: 1.5;
+    background-color: #505050;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mapa {
+    margin: 20px;
+}
+
+.horario-ubicacion {
+    margin-bottom: 20px;
+}
+
+.avisos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+.avisos a {
+    color: #ffffff;
+}
+
+.derechos {
+    margin-top: auto; 
+}
+.redes-sociales{
+    margin-bottom: 10px;
+}
+.redes-sociales a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #111; 
+    font-size: 30px;
+    transition: color 0.3s ease; 
+}
+
+.redes-sociales .fa-facebook:hover {
+    color: #1a00af; 
+}
+
+.redes-sociales .fa-whatsapp:hover {
+    color: #00bb1f; 
+}
+
+.redes-sociales .fa-instagram:hover {
+    color: #bb0600; 
+}

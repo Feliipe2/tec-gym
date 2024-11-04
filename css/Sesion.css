@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/img/fondo.png);
+    background-size: cover; 
+    background-attachment: fixed;
+}
+.header{
+    width: 80%;
+    height: 6em; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+form{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    text-align: center;
+    padding: 20px 25px;
+    border-radius: 20px;
+    border: 2px solid;
+    box-shadow: 2px 2px 10px #000;
+}
+form .title{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Segoe UI';
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+label{
+    margin: 20px;
+}
+form label .fa-solid{
+    margin-right: 10px;
+    color: #06f;
+    font-size: 20px;
+}
+form label input{
+    outline: none;
+    margin-bottom: 10px;
+    height: 23px;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    padding: o 5px;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    text-transform: capitalize;
+}
+form label input::placeholder{
+    color:#aaa;
+    font-family: Georgia;
+}
+form .recovery{
+    color:#06f;
+    margin-bottom: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+}
+form button{
+    padding: 10px 15px;
+    color: #000;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    box-shadow: 1px 1px 3px #000;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
