@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
 body {
     width: 100%;
     height: 100%;
@@ -12,10 +13,11 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-image: url(/img/fondo.png);
+    background-image: url(../img/fondo.png);
     background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el fondo */
     background-attachment: fixed; /* Establece la imagen de fondo como fija */
 }
+
 .header{
     width: 80%;
     height: 6em; 
@@ -24,11 +26,22 @@ body {
     justify-content: center;
     align-items: center;
     color: #fff;
+    margin: 20px 0px;
 }
+
+.title {
+    font-size: 2em;
+    margin-left: 20px;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
 .nav{
     width: 80%;
     height: 3em;
 }
+
 .barraNav{
     width: 100%;
     height: 100%;
@@ -40,21 +53,24 @@ body {
 .menu{
     width: 20%;
     height: 100%;
-    background-color: #706c6c;
+    background-color: #9e34a1;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     border: 2px solid #ffffff;
-    border-radius: 25px;
+    border-radius: 20px;
     transition: background-color 0.2s;
-    color: #dad7d5;
+    color: white;
     text-decoration: none;
     text-transform: capitalize;
+    margin: 0px 20px;
 }
+
 .menu:hover{
-    background-color: #a8a8a4;
+    background-color: #6a206e;
 }
+
 .banner{
     width: 80%;
     height: calc(70vh - 1em);
@@ -63,23 +79,26 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .img-banner{
-     width: 100%; 
-     height: 90%;
+    width: 100%; 
+    height: 90%;
 }
+
 .main{
     width: 80%;
     height: 70em;
 }
+
 .article, .equipos, .programas{
-    background-color: #fffdfd76;
+    background-color: #ffffffe0;
     padding: 30px 25px;
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: #000000;
     border: 2px solid #000;
     box-shadow: 4px 4px 10px #383737;
 }
+
 .title-article, .title-equipos, .title-programas{
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
@@ -99,11 +118,13 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
 .img-equipos, .img-programas{
     max-width: 100%;
     height: 20em;
     border-radius: 45%;
 } 
+
 .img-equipos, .img-programas {
     max-width: 100%;
     height: 20em;
@@ -123,21 +144,26 @@ body {
 }
 
 .btn-inscripcion{
-    width: 120px;
-    height: 40px;
+    width: 180px;
+    height: 45px;
     padding: 5px 10px; 
     font-size: 13px;
     font-weight: bold;
     border: 1px solid;
-    border-radius: 10px; 
+    border-radius: 20px; 
     box-shadow: 2px 2px 5px #000; 
-    background-color: #ee0000;
+    background-color: #9e34a1;
     transition: background-color 0.1s;
     color: #fff;
     cursor: pointer;
 }   
 .btn-inscripcion:hover{
-    background-color: #706c6c;
+    background-color: #6a206e;
+}
+
+.mapa {
+    margin: 20px;
+    border-radius: 10px;
 }
 
 .footer {
@@ -150,10 +176,6 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-.mapa {
-    margin: 20px;
 }
 
 .horario-ubicacion {
@@ -186,7 +208,7 @@ body {
 }
 
 .redes-sociales .fa-facebook:hover {
-    color: #1a00af; 
+    color: #0b57ca; 
 }
 
 .redes-sociales .fa-whatsapp:hover {
@@ -194,5 +216,13 @@ body {
 }
 
 .redes-sociales .fa-instagram:hover {
-    color: #bb0600; 
+    color: #7c2197; 
+}
+
+.redes-sociales .fa-twitter:hover {
+    color: #ffffff; 
+}
+
+.redes-sociales .fa-google-plus:hover {
+    color: #e01d1d; 
 }

@@ -4,13 +4,14 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
-    background-image: url(/img/fondo.png);
+    background-image: url(../img/fondo.png);
     background-size: cover; 
     background-attachment: fixed;
 }
@@ -22,65 +23,228 @@ body{
     justify-content: center;
     align-items: center;
     color: #fff;
-    margin-bottom: 30px;
+    margin: 20px 0px;
 }
-form{
-    width: 350px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    background: #fff;
+
+.title {
+    font-size: 2em;
+    margin-left: 20px;
+    align-items: center;
     text-align: center;
-    padding: 20px 25px;
-    border-radius: 20px;
-    border: 2px solid;
-    box-shadow: 2px 2px 10px #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
-form .title{
-    color: #000;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-family: 'Segoe UI';
-    font-weight: 800;
+
+.nav{
+    width: 80%;
+    height: 3em;
+}
+.barraNav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    width: 20%;
+    height: 100%;
+    background-color: #9e34a1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    transition: background-color 0.2s;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 0px 20px;
+}
+.menu:hover{
+    background-color: #6a206e;
+}
+
+.form-inicio-sesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40vh;
+    margin: 100px 0px;
+}
+
+.form-inicio-sesion .formulario {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    border: 2px solid #000;
+    box-shadow:4px 4px 40px #000;
+    transition: background-color 0.1s;
+}
+
+.form-inicio-sesion .formulario .titulo {
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+}
+
+.form-inicio-sesion .formulario .contenedor-completo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
 }
-label{
-    margin: 20px;
+
+.form-inicio-sesion .formulario .contenedor-completo i{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-form label .fa-solid{
-    margin-right: 10px;
-    color: #06f;
-    font-size: 20px;
+
+.form-inicio-sesion .formulario .contenedor-completo .contenedor-entrada {
+    position: relative;
+    height: 45px;
+    width: 90%;
 }
-form label input{
+
+.form-inicio-sesion .formulario .contenedor-completo .contenedor-entrada .recibir {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
     outline: none;
-    margin-bottom: 10px;
-    height: 23px;
+    background: none;
+    z-index: 1;
+}
+
+.form-inicio-sesion .formulario .contenedor-completo .contenedor-entrada .recibir:focus + .etiqueta {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+.form-inicio-sesion .formulario .contenedor-completo .contenedor-entrada .recibir:focus {
+    border: 2px solid black;
+}
+
+.form-inicio-sesion .formulario .contenedor-completo .contenedor-entrada .recibir:not(:placeholder-shown)+ .etiqueta {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-inicio-sesion .formulario input::placeholder {
+    color: transparent;
+}
+
+.form-inicio-sesion .formulario .contenedor-completo .contenedor-entrada .etiqueta{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.form-inicio-sesion .formulario .boton-login{
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
     border: none;
-    border-bottom: 2px solid #aaa;
-    padding: o 5px;
-    font-size: 15px;
-    font-family: 'Segoe UI';
-    text-transform: capitalize;
-}
-form label input::placeholder{
-    color:#aaa;
-    font-family: Georgia;
-}
-form .recovery{
-    color:#06f;
-    margin-bottom: 40px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-transform: capitalize;
-}
-form button{
-    padding: 10px 15px;
-    color: #000;
-    font-weight: 700;
-    font-size: 15px;
-    border: none;
-    box-shadow: 1px 1px 3px #000;
-    border-radius: 5px;
-    text-transform: capitalize;
+    background-color: #9e34a1;
+    color: white;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.form-inicio-sesion .formulario .boton-login:hover {
+    background-color: #6a206e;
+    transform: translateY(-2px);
+}
+
+.link-contraseña {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.footer {
+    width: 100%;
+    line-height: 1.5;
+    background-color: #505050;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.avisos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+.avisos a {
+    color: #ffffff;
+}
+
+.derechos {
+    margin-top: auto; 
+}
+.redes-sociales{
+    margin-bottom: 10px;
+}
+.redes-sociales a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #111; 
+    font-size: 30px;
+    transition: color 0.3s ease; 
+}
+
+.redes-sociales .fa-facebook:hover {
+    color: #0b57ca; 
+}
+
+.redes-sociales .fa-whatsapp:hover {
+    color: #00bb1f; 
+}
+
+.redes-sociales .fa-instagram:hover {
+    color: #7c2197; 
+}
+
+.redes-sociales .fa-twitter:hover {
+    color: #ffffff; 
+}
+
+.redes-sociales .fa-google-plus:hover {
+    color: #e01d1d; 
 }

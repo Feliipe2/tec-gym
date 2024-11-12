@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-image: url(/img/fondo.png);
+    background-image: url(../img/fondo.png);
     background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el fondo */
     background-attachment: fixed; /* Establece la imagen de fondo como fija */
 }
@@ -24,6 +24,14 @@ body {
     justify-content: center;
     align-items: center;
     color: #fff;
+    margin: 20px 0px;
+}
+.title {
+    font-size: 2em;
+    margin-left: 20px;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 .nav{
     width: 80%;
@@ -40,7 +48,7 @@ body {
 .menu{
     width: 20%;
     height: 100%;
-    background-color: #706c6c;
+    background-color: #9e34a1;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -48,11 +56,13 @@ body {
     border: 2px solid #ffffff;
     border-radius: 25px;
     transition: background-color 0.2s;
-    color: #dad7d5;
+    color: white;
     text-decoration: none;
+    text-transform: capitalize;
+    margin: 0px 20px;
 }
 .menu:hover{
-    background-color: #a8a8a4;
+    background-color: #6a206e;
 }
 .banner{
     width: 80%;
@@ -78,10 +88,12 @@ body {
 }
 .title-planes{
     padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 2em;
     text-align: center;
     color: #fff;
     word-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 .plan{
     margin: auto;
@@ -92,12 +104,11 @@ body {
     text-align: justify;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
     padding: 30px ;
     border-radius: 10px;
     border: 2px solid #000;
     box-shadow:4px 4px 40px #000;
-    background-color: #e0e0e0;
+    background-color: #ffffffe0;
     transition: background-color 0.1s;
     color: #000000;
     cursor: pointer;
@@ -124,7 +135,7 @@ body {
     width: 1.3em; 
 }
 .plan:hover{
-    background-color: #706c6cee;
+    background-color: #c7c4c4ee;
 }
 .precio-plan{
     color: #f80404 ;
@@ -138,7 +149,7 @@ body {
     border: 1px solid;
     border-radius: 10px;
     box-shadow: 2px 2px 20px #000;
-    background-color: #ee0000;
+    background-color: #9e34a1;
     cursor: pointer;
     transition: transform 0.3s ease; /* Transición suave al cambiar la posición */
 }
@@ -155,12 +166,60 @@ a{
     text-decoration: none;
     color: #fff;
 }
-.footer{
+
+.footer {
     width: 100%;
-    height: 4em;
-    background-color: #706c6c;
+    line-height: 1.5;
+    background-color: #505050;
+    color: #ffffff;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center ;
+    align-items: center;
+    text-align: center;
+}
+
+.avisos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+.avisos a {
+    color: #ffffff;
+}
+
+.derechos {
+    margin-top: auto; 
+}
+.redes-sociales{
+    margin-bottom: 10px;
+}
+.redes-sociales a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #111; 
+    font-size: 30px;
+    transition: color 0.3s ease; 
+}
+
+.redes-sociales .fa-facebook:hover {
+    color: #0b57ca; 
+}
+
+.redes-sociales .fa-whatsapp:hover {
+    color: #00bb1f; 
+}
+
+.redes-sociales .fa-instagram:hover {
+    color: #7c2197; 
+}
+
+.redes-sociales .fa-twitter:hover {
+    color: #ffffff; 
+}
+
+.redes-sociales .fa-google-plus:hover {
+    color: #e01d1d; 
 }

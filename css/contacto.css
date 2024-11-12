@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-image: url(/img/fondo.png);
+    background-image: url(../img/fondo.png);
     background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el fondo */
     background-attachment: fixed; /* Establece la imagen de fondo como fija */
 }
@@ -24,7 +24,17 @@ body {
     justify-content: center;
     align-items: center;
     color: #fff;
+    margin: 20px 0px;
 }
+
+.title {
+    font-size: 2em;
+    margin-left: 20px;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
 .nav{
     width: 80%;
     height: 3em;
@@ -40,7 +50,7 @@ body {
 .menu{
     width: 20%;
     height: 100%;
-    background-color: #706c6c;
+    background-color: #9e34a1;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -48,11 +58,13 @@ body {
     border: 2px solid #ffffff;
     border-radius: 25px;
     transition: background-color 0.2s;
-    color: #dad7d5;
+    color: white;
     text-decoration: none;
+    text-transform: capitalize;
+    margin: 0px 20px;
 }
 .menu:hover{
-    background-color: #a8a8a4;
+    background-color: #6a206e;
 }
 
 .main{
@@ -60,63 +72,183 @@ body {
     height: 35em;
     padding: 20px;
 }
-.container{
-    width: 100%;
-    height: 30em;
+
+.form-resgistro {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 55vh;
 }
-.form{
-    width: 50%;
-    height: 30em;
+
+.formulario {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px 40px;
+    border: 2px solid #000;
+    box-shadow:4px 4px 40px #000;
+    transition: background-color 0.1s;
+}
+
+.formulario .title-contacto {
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+}
+
+.contenedor-entrada {
+    position: relative;
+    height: 45px;
+    margin-bottom: 17px;
+}
+
+.recibir {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+.recibir:focus + .etiqueta {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+.recibir:focus {
+    border: 2px solid black;
+}
+
+.recibir:not(:placeholder-shown)+ .etiqueta {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+::placeholder {
+    color: transparent;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.mensaje {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #dad7d5;
-    margin: 20px;
-    border: 3px solid #000;
-    border-radius: 10px;
-    box-shadow: 0 0 40px  #000;
+    margin-bottom: 10px;
 }
-input{
-    width: 50%;
-    height: 4em;
-    border: 1px solid #000;
-    border-radius: 5px;
+
+.contenedor-entrada textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 7px;
     padding: 10px;
+    background: none;
+    resize: none;
 }
-.checkbox{
-    width: 20px;
-    height: 20px;
+
+.contenedor-entrada .checkbox {
+    margin-right: 10px;
+    margin-top: 50px;
 }
-#enviar{
-    width: 20vh;
-    height: 2em;
-    margin: 20px;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #fff;
-    border: 1px solid;
-    border-radius: 10px;
-    box-shadow: 2px 2px 20px #000;
-    background-color: #000000;
+
+.boton-registro {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: #9e34a1;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
 }
-.avisos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+.boton-registro:hover {
+    background-color: #6a206e;
+    transform: translateY(-2px);
 }
-a{
-    text-decoration: none;
-    color: #fff;
-}
-.footer{
+
+.footer {
     width: 100%;
-    height: 4em;
-    background-color: #706c6c;
+    line-height: 1.5;
+    background-color: #505050;
+    color: #ffffff;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center ;
+    align-items: center;
+    text-align: center;
+}
+
+.avisos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+.avisos a {
+    color: #ffffff;
+}
+
+.derechos {
+    margin-top: auto; 
+}
+.redes-sociales{
+    margin-bottom: 10px;
+}
+.redes-sociales a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #111; 
+    font-size: 30px;
+    transition: color 0.3s ease; 
+}
+
+.redes-sociales .fa-facebook:hover {
+    color: #0b57ca; 
+}
+
+.redes-sociales .fa-whatsapp:hover {
+    color: #00bb1f; 
+}
+
+.redes-sociales .fa-instagram:hover {
+    color: #7c2197; 
+}
+
+.redes-sociales .fa-twitter:hover {
+    color: #ffffff; 
+}
+
+.redes-sociales .fa-google-plus:hover {
+    color: #e01d1d; 
 }
