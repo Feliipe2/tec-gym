@@ -29,6 +29,14 @@ body {
     margin: 20px 0px;
 }
 
+.title {
+    font-size: 2em;
+    margin-left: 20px;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
 .nav {
     width: 80%;
     height: 3em;
