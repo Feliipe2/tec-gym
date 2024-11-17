@@ -83,8 +83,8 @@ body {
 .planes{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5em;
+    flex-wrap: wrap; 
+    gap: 1.5em; 
 }
 .title-planes{
     padding-top: 20px;
@@ -105,20 +105,20 @@ body {
     justify-content: center;
     align-items: center;
     padding: 30px ;
-    border-radius: 10px;
-    border: 2px solid #000;
-    box-shadow:4px 4px 40px #000;
-    background-color: #ffffffe0;
-    transition: background-color 0.1s;
-    color: #000000;
+    border-radius: 10px; 
+    border: 2px solid #000; 
+    box-shadow:4px 4px 40px #000; 
+    background-color: #ffffffe0; 
+    transition: background-color 0.1s; 
+    color: #000000; 
     cursor: pointer;
 }
 .des-plan {
-    list-style-type: none; 
+    list-style-type: none;  
 }
 
 .des-plan li {
-    position: relative;
+    position: relative; 
     padding-left: 1.3em; 
 }
 

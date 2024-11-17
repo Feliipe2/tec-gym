@@ -37,6 +37,7 @@ body{
 .nav{
     width: 80%;
     height: 3em;
+    margin: auto;
 }
 .barraNav{
     width: 100%;
@@ -168,7 +169,7 @@ body{
 
 .form-inicio-sesion .formulario .boton-login{
     display: block;
-    margin-left: auto;
+    margin:0 auto;
     padding: 15px 30px;
     border: none;
     background-color: #9e34a1;

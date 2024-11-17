@@ -9,65 +9,151 @@
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header class="header">
-        <img src="../img/logo.png" alt="logo" height="92" >
-       <i><h1 class="title">Iron Paradise Gym</h1></i>
-    </header>
-    <nav class="nav">
-        <ul class="barraNav">
-            <a href="../index.html" class="menu">Inicio</a>
-            <a href="../html/planes.html" class="menu">Nuestros Planes</a>
-            <a href="../index.html#horario" class="menu">Horarios</a>
-            <a href="../html/contacto.html" class="menu">Contáctanos</a>
-            <a href="../html/registro.html" class="menu">Registrarse</a>
-            <a href="../html/Sesion.html" class="menu">Iniciar Sesión</a>
-        </ul>
-    </nav>
-    <div class="form">
-        <form action="" class="formulario">
-            <h1 class="title-form">Formulario de Pago</h1>
-            <div class="contenedor-entrada">
-                <input type="text" class="recibir" placeholder="a">
-                <label for="" class="etiqueta">Nombres y Apellidos</label>
-            </div>
-            <div class="contenedor-entrada">
-                <input type="number" class="recibir" placeholder="a">
-                <label for="" class="etiqueta">Número de Tarjeta</label>
-            </div>
-            <div class="contenedor-entrada">
-                <input type="text" class="recibir" placeholder="a">
-                <label for="" class="etiqueta">Email</label>
-            </div>
-            <div class="contenedor-entrada">
-                <input type="password" class="recibir" placeholder="a">
-                <label for="" class="etiqueta">Contraseña</label>
-            </div>
-            <div class="contenedor-entrada">
-                <input type="text" class="recibir" placeholder="a">
-                <label for="" class="etiqueta">Codigo de Seguridad</label>
-            </div>
-            <button id="btnpagar">Pagar</button>
-        </form>
+<header class="header">
+    <img src="../img/logo.png" alt="logo" height="92" >
+   <i><h1 class="title">Iron Paradise Gym</h1></i>
+</header>
+<nav class="nav">
+    <div class="barraNav">
+        <a href="../index.html" class="menu">Inicio</a>
+        <a href="../html/planes.html" class="menu">Nuestros Planes</a>
+        <a href="../index.html#horario" class="menu">Horarios</a>
+        <a href="../html/contacto.html" class="menu">Contáctanos</a>
+        <a href="../html/registro.html" class="menu">Registrarse</a>
+        <a href="../html/Sesion.html" class="menu">Iniciar Sesión</a>
     </div>
-    <footer class="footer">
-        <section class="icono-redes">
-            <div class="redes-sociales">
-                <a href="https://www.facebook.com/IronParadiseNeiva/" target="_blank"><i class="fa-brands fa-facebook"></i></i></a>
-                <a href="https://wa.me/tu_numero_de_telefono" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://www.instagram.com/ironparadise_gym/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.google.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.google.com" target="_blank"><i class="fa-brands fa-google-plus"></i></a>
-            </div>
-        </section>
-        <section class="avisos">
-            <a href="#">Avisos Legales</a>
-            <a href="#">Políticas de Privacidad</a>
-            <a href="#">Políticas de Cookies</a> 
-        </section>
-        <div class="derechos">
-            <p>&copy; 2024 - Iron Paradise Gym | Todos los Derechos Reservados</p>
+</nav>
+
+<div class="container">
+    <section class="products">
+        <div class="product-card">
+            <img src="/img/Plan Mensual.jfif" alt="Plan Mensual" class="product-image">
+            <h3 class="product-title">Plan Mensual</h3>
+            <p class="product-description">Acceso completo al gimnasio durante 30 días. Incluye área de pesas, cardio y vestidores.</p>
+            <p class="product-price">$66,000 COP</p>
+            <button class="add-to-cart" onclick="addToCart('Plan Mensual', 66000)">Agregar al Carrito</button>
         </div>
-    </footer>
+
+        <div class="product-card">
+            <img src="/img/Plan Bimestral.png" alt="Plan Bimestral" class="product-image">
+            <h3 class="product-title">Plan Bimestral</h3>
+            <p class="product-description">2 meses de acceso completo con 10% de descuento. Incluye programa de entrenamiento básico.</p>
+            <p class="product-price">$125,000 COP</p>
+            <button class="add-to-cart" onclick="addToCart('Plan Bimestral', 125000)">Agregar al Carrito</button>
+        </div>
+
+        <div class="product-card">
+            <img src="/img/Plan Trimestral.png" alt="Plan Trimestral" class="product-image">
+            <h3 class="product-title">Plan Trimestral</h3>
+            <p class="product-description">3 meses de acceso total con 15% de descuento. Incluye una evaluación física.</p>
+            <p class="product-price">$165,000 COP</p>
+            <button class="add-to-cart" onclick="addToCart('Plan Trimestral', 165000)">Agregar al Carrito</button>
+        </div>
+
+        <div class="product-card">
+            <img src="/img/Plan Semestral.jpg" alt="Plan Semestral" class="product-image">
+            <h3 class="product-title">Plan Semestral</h3>
+            <p class="product-description">6 meses de acceso VIP con 20% de descuento. Incluye 2 evaluaciones físicas.</p>
+            <p class="product-price">$300,000 COP</p>
+            <button class="add-to-cart" onclick="addToCart('Plan Semestral', 300000)">Agregar al Carrito</button>
+        </div>
+
+        <div class="product-card">
+            <img src="/img/Plan Anual.jfif" alt="Plan Anual" class="product-image">
+            <h3 class="product-title">Plan Anual</h3>
+            <p class="product-description">12 meses de acceso premium con 25% de descuento. Incluye 4 evaluaciones físicas.</p>
+            <p class="product-price">$500,000 COP</p>
+            <button class="add-to-cart" onclick="addToCart('Plan Anual', 500000)">Agregar al Carrito</button>
+        </div>
+
+        <div class="product-card">
+            <img src="/img/Plan Full.jpg" alt="Plan Full" class="product-image">
+            <h3 class="product-title">Plan Full</h3>
+            <p class="product-description">Acceso ilimitado todo incluido: gimnasio, clases grupales, nutriólogo y entrenador personal.</p>
+            <p class="product-price">$600,000 COP</p>
+            <button class="add-to-cart" onclick="addToCart('Plan Full', 600000)">Agregar al Carrito</button>
+        </div>
+    </section>
+
+    <section class="cart">
+        <h2 class="cart-title">Tu Carrito</h2>
+        <div id="cart-items" class="cart-items">
+            <!-- Los items del carrito se agregarán aquí dinámicamente -->
+        </div>
+        <div id="cart-total" class="cart-total">
+            <strong>Total: $0 COP</strong>
+        </div>
+        <button class="checkout-btn" onclick="checkout()">Proceder al Pago</button>
+    </section>
+</div>
+
+<footer class="footer">
+    <div class="redes-sociales">
+        <a href="https://www.facebook.com/IronParadiseNeiva/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/tu_numero_de_telefono" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/ironparadise_gym/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-google-plus"></i></a>
+    </div>
+    <div class="avisos">
+        <a href="#">Avisos Legales</a>
+        <a href="#">Políticas de Privacidad</a>
+        <a href="#">Políticas de Cookies</a>
+    </div>
+    <div class="derechos">
+        © 2024 - Iron Paradise Gym | Todos los Derechos Reservados
+    </div>
+</footer>
+
+<script>
+    let cart = [];
+    let total = 0;
+
+    function addToCart(name, price) {
+        cart.push({name, price});
+        total += price;
+        updateCart();
+    }
+
+    function removeFromCart(index) {
+        total -= cart[index].price;
+        cart.splice(index, 1);
+        updateCart();
+    }
+
+    function updateCart() {
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+        
+        cartItems.innerHTML = '';
+        cart.forEach((item, index) => {
+            const cartItem = document.createElement('div');
+            cartItem.className = 'cart-item';
+            cartItem.innerHTML = `
+                <div class="cart-item-info">
+                    <span>${item.name}</span>
+                </div>
+                <div class="cart-item-info">
+                    <span>$${item.price} COP</span>
+                    <i class="fas fa-trash remove-item" onclick="removeFromCart(${index})"></i>
+                </div>
+            `;
+            cartItems.appendChild(cartItem);
+        });
+        
+        cartTotal.innerHTML = `<strong>Total: $${total} COP</strong>`;
+    }
+
+    function checkout() {
+        if (cart.length === 0) {
+            alert('Tu carrito está vacío');
+            return;
+        }
+        // Aquí puedes agregar la lógica para proceder al pago
+        alert('Procediendo al pago...');
+        // Normalmente aquí redirigirías a la página de pago
+        // window.location.href = 'pago.html';
+    }
+</script>
 </body>
 </html>

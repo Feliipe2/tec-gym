@@ -38,6 +38,7 @@ body{
 .nav{
     width: 80%;
     height: 3em;
+    margin: auto;
 }
 .barraNav{
     width: 100%;
@@ -73,7 +74,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 50vh;
-    margin: 40px 0px;
+    margin: 100px 0px;
 }
 
 .formulario {
@@ -155,7 +156,7 @@ body{
 
 .boton-registro {
     display: block;
-    margin-left: auto;
+    margin: auto;
     padding: 15px 30px;
     border: none;
     background-color: #9e34a1;
