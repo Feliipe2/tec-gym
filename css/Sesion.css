@@ -11,7 +11,7 @@ body{
     justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
-    background-image: url(../img/fondo.png);
+    background-image: url(../img/fondonue.jpg);
     background-size: cover; 
     background-attachment: fixed;
 }
@@ -46,26 +46,36 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: #cac8c8;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 10px #383737;
+    border-radius: 10px;
 }
-
 .menu{
     width: 20%;
     height: 100%;
-    background-color: #9e34a1;
+    background-color: #e7e7e7;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 2px solid #ffffff;
-    border-radius: 25px;
+    border-radius: 5px;
     transition: background-color 0.2s;
-    color: white;
+    color: #202020;
     text-decoration: none;
     text-transform: capitalize;
     margin: 0px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#IniciarS{    
+    background-color: #4f589f;
+    color: white;
+}
+.IniciarS:hover{
+    background-color: #3b308f;  
 }
 .menu:hover{
-    background-color: #6a206e;
+    background-color: #ddd;
 }
 
 .form-inicio-sesion {
